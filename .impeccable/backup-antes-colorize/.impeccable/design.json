@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T05:24:19.701Z",
+  "title": "Design System: Gelatto Sole",
+  "extensions": {
+    "colorMeta": {
+      "ameixa-escura": {
+        "role": "primary",
+        "displayName": "Ameixa Escura",
+        "canonical": "#2A1740",
+        "tonalRamp": [
+          "#251B32",
+          "#412B59",
+          "#5C3984",
+          "#7644B0",
+          "#966BC7",
+          "#B69BD4",
+          "#D5C8E4",
+          "#F2EEF6"
+        ]
+      },
+      "ifood": {
+        "role": "primary",
+        "displayName": "Vermelho iFood",
+        "canonical": "#EA1D2C",
+        "tonalRamp": [
+          "#3B1215",
+          "#6B1A20",
+          "#A01D26",
+          "#DA1B29",
+          "#EA4854",
+          "#EA858D",
+          "#EFBDC1",
+          "#F9EBEC"
+        ]
+      },
+      "ifood-escuro": {
+        "role": "primary",
+        "displayName": "Vermelho iFood Escuro",
+        "canonical": "#D3141F",
+        "tonalRamp": [
+          "#3A1214",
+          "#6B1A1E",
+          "#A01D25",
+          "#D91C26",
+          "#EA4852",
+          "#EA868B",
+          "#EFBDC0",
+          "#F9ECEC"
+        ]
+      },
+      "morango": {
+        "role": "secondary",
+        "displayName": "Morango",
+        "canonical": "#FF4D7E",
+        "tonalRamp": [
+          "#3F0E1B",
+          "#73112C",
+          "#AD0F3B",
+          "#ED0847",
+          "#FA386D",
+          "#F47B9C",
+          "#F4B8C9",
+          "#FAEAEF"
+        ]
+      },
+      "manga": {
+        "role": "secondary",
+        "displayName": "Manga",
+        "canonical": "#FFB81F",
+        "tonalRamp": [
+          "#3F2F0E",
+          "#735411",
+          "#AD7B0F",
+          "#EDA408",
+          "#FABD38",
+          "#F4CE7B",
+          "#F4E1B8",
+          "#FAF5EA"
+        ]
+      },
+      "blueberry": {
+        "role": "secondary",
+        "displayName": "Blueberry",
+        "canonical": "#6B4DFF",
+        "tonalRamp": [
+          "#160E3F",
+          "#221173",
+          "#2A0FAD",
+          "#2E08ED",
+          "#5838FA",
+          "#907BF4",
+          "#C2B8F4",
+          "#EDEAFA"
+        ]
+      },
+      "ceu-de-coco": {
+        "role": "secondary",
+        "displayName": "Céu de Coco",
+        "canonical": "#38C8FF",
+        "tonalRamp": [
+          "#0E313F",
+          "#115873",
+          "#0F82AD",
+          "#08AEED",
+          "#38C5FA",
+          "#7BD3F4",
+          "#B8E4F4",
+          "#EAF6FA"
+        ]
+      },
+      "baunilha": {
+        "role": "secondary",
+        "displayName": "Baunilha",
+        "canonical": "#FFE27A",
+        "tonalRamp": [
+          "#3F340E",
+          "#735E11",
+          "#AD8B0F",
+          "#EDBB08",
+          "#FAD038",
+          "#F4DA7B",
+          "#F4E7B8",
+          "#FAF7EA"
+        ]
+      },
+      "maracuja": {
+        "role": "secondary",
+        "displayName": "Maracujá",
+        "canonical": "#FFC93C",
+        "tonalRamp": [
+          "#3F310E",
+          "#735811",
+          "#AD820F",
+          "#EDAE08",
+          "#FAC438",
+          "#F4D37B",
+          "#F4E4B8",
+          "#FAF6EA"
+        ]
+      },
+      "laranja-calda": {
+        "role": "secondary",
+        "displayName": "Laranja Calda",
+        "canonical": "#FF7A3D",
+        "tonalRamp": [
+          "#3F1D0E",
+          "#733011",
+          "#AD410F",
+          "#ED5008",
+          "#FA7538",
+          "#F4A17B",
+          "#F4CBB8",
+          "#FAEFEA"
+        ]
+      },
+      "pistache-escuro": {
+        "role": "tertiary",
+        "displayName": "Pistache Escuro",
+        "canonical": "#278A3E",
+        "tonalRamp": [
+          "#19341F",
+          "#275E34",
+          "#328B47",
+          "#3ABB58",
+          "#63CF7C",
+          "#96D9A5",
+          "#C5E7CD",
+          "#EEF7F0"
+        ]
+      },
+      "morango-escuro": {
+        "role": "tertiary",
+        "displayName": "Morango Escuro",
+        "canonical": "#E02A62",
+        "tonalRamp": [
+          "#39141F",
+          "#671E34",
+          "#992348",
+          "#D02559",
+          "#E2507D",
+          "#E58AA6",
+          "#EDC0CE",
+          "#F8ECF0"
+        ]
+      },
+      "manga-escura": {
+        "role": "tertiary",
+        "displayName": "Manga Escura",
+        "canonical": "#C97800",
+        "tonalRamp": [
+          "#3F2B0E",
+          "#734C11",
+          "#AD6E0F",
+          "#ED9108",
+          "#FAAC38",
+          "#F4C37B",
+          "#F4DCB8",
+          "#FAF4EA"
+        ]
+      },
+      "rosa-leite": {
+        "role": "neutral",
+        "displayName": "Rosa-Leite",
+        "canonical": "#FFF7FB",
+        "tonalRamp": [
+          "#3F0E26",
+          "#731142",
+          "#AD0F5E",
+          "#ED087A",
+          "#FA3899",
+          "#F47BB8",
+          "#F4B8D6",
+          "#FAEAF2"
+        ]
+      },
+      "branco-casquinha": {
+        "role": "neutral",
+        "displayName": "Branco Casquinha",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5E5E5E",
+          "#7A7A7A",
+          "#999999",
+          "#B8B8B8",
+          "#D6D6D6",
+          "#F2F2F2"
+        ]
+      },
+      "ameixa-suave": {
+        "role": "neutral",
+        "displayName": "Ameixa Suave",
+        "canonical": "#5C4A74",
+        "tonalRamp": [
+          "#25212C",
+          "#41374D",
+          "#5C4D70",
+          "#776194",
+          "#9683AF",
+          "#B6AAC5",
+          "#D5D0DD",
+          "#F2F0F4"
+        ]
+      },
+      "nevoa-rosa": {
+        "role": "neutral",
+        "displayName": "Névoa Rosa",
+        "canonical": "#F1DDEB",
+        "tonalRamp": [
+          "#301C2A",
+          "#572E4A",
+          "#7F3D6C",
+          "#AA4B8E",
+          "#C270A9",
+          "#D19EC2",
+          "#E3CADB",
+          "#F6EFF4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Só o H1 do hero."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "H2 de seção."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3 de cards, passos e lojas."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Depoimentos; o destaque escala para clamp(1.7rem, 3.4vw, 2.7rem)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Parágrafo de apoio sob títulos, ameixa suave, máx. 52ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Botões, preços e etiquetas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "nav-float",
+        "value": "0 12px 30px -14px rgba(42,23,64,.35), inset 0 0 0 1px rgba(255,255,255,.9)",
+        "purpose": "Barra de navegação em vidro."
+      },
+      {
+        "name": "button-ifood",
+        "value": "0 10px 20px -12px rgba(234,29,44,.7)",
+        "purpose": "Brilho vermelho sob o botão iFood."
+      },
+      {
+        "name": "button-ifood-hover",
+        "value": "0 12px 22px -12px rgba(234,29,44,.7)",
+        "purpose": "Hover do botão iFood."
+      },
+      {
+        "name": "button-white",
+        "value": "0 8px 18px -12px rgba(42,23,64,.35)",
+        "purpose": "Botão secundário branco."
+      },
+      {
+        "name": "badge",
+        "value": "0 8px 20px -10px rgba(42,23,64,.4)",
+        "purpose": "Selo do hero."
+      },
+      {
+        "name": "hero-frame",
+        "value": "-30px 40px 60px -20px rgba(107,77,255,.45)",
+        "purpose": "Halo blueberry da moldura inclinada do hero."
+      },
+      {
+        "name": "arch-photo",
+        "value": "0 40px 60px -34px rgba(42,23,64,.5)",
+        "purpose": "Foto em arco da seção Sobre."
+      },
+      {
+        "name": "process-video",
+        "value": "0 30px 60px -30px rgba(42,23,64,.45)",
+        "purpose": "Vídeo da seção de processo."
+      },
+      {
+        "name": "ribbon",
+        "value": "0 20px 40px -20px rgba(42,23,64,.6)",
+        "purpose": "Faixa de sabores diagonal."
+      },
+      {
+        "name": "photo-tag",
+        "value": "0 14px 24px -12px rgba(42,23,64,.5)",
+        "purpose": "Etiqueta manga inclinada."
+      },
+      {
+        "name": "cta-glow",
+        "value": "0 40px 70px -36px #FF4D7E",
+        "purpose": "Brilho morango sob o CTA final."
+      },
+      {
+        "name": "print-photo",
+        "value": "0 30px 40px -20px rgba(80,10,30,.6)",
+        "purpose": "Fotos impressas sobre o gradiente quente."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-press",
+        "value": "transform .12s, box-shadow .12s",
+        "purpose": "Elevação de 1px no hover dos botões."
+      },
+      {
+        "name": "hero-tilt",
+        "value": "transform .15s ease-out",
+        "purpose": "Moldura do hero segue o mouse."
+      },
+      {
+        "name": "photo-zoom",
+        "value": "transform .7s",
+        "purpose": "Foto do card de produto amplia 5% no hover."
+      },
+      {
+        "name": "step-fade",
+        "value": "opacity .4s, transform .4s",
+        "purpose": "Troca de passos no processo."
+      },
+      {
+        "name": "char-reveal",
+        "value": "opacity .5s, transform .5s, filter .5s; stagger 26ms (títulos) / 45ms (texto)",
+        "purpose": "Letras surgem de desfoque 6–8px."
+      },
+      {
+        "name": "marquee",
+        "value": "mq 32s linear infinite",
+        "purpose": "Faixa de sabores rolando."
+      },
+      {
+        "name": "count-glow",
+        "value": "glow 2s infinite",
+        "purpose": "Pulso baunilha do contador de passos."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "top-mobile",
+        "value": "860px",
+        "purpose": "Menu some, hero em uma coluna, processo em layout móvel."
+      },
+      {
+        "name": "lower-stack",
+        "value": "980px",
+        "purpose": "Metade inferior em uma coluna, faixas com 36px de canto."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão iFood",
+      "kind": "button",
+      "refersTo": "button-ifood",
+      "description": "Ação principal de pedido; exclusivo para iFood.",
+      "html": "<a class=\"ds-btn-ifood\" href=\"#\">Pedir no iFood</a>",
+      "css": ".ds-btn-ifood{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:999px;border:2px solid transparent;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:1rem;text-decoration:none;color:#fff;background:#EA1D2C;box-shadow:0 10px 20px -12px rgba(234,29,44,.7);transition:transform .12s,box-shadow .12s}.ds-btn-ifood:hover{background:#D3141F;transform:translateY(-1px);box-shadow:0 12px 22px -12px rgba(234,29,44,.7)}.ds-btn-ifood:active{transform:none}.ds-btn-ifood:focus-visible{outline:3px solid #6B4DFF;outline-offset:3px}"
+    },
+    {
+      "name": "Botão branco",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "Ação secundária (Ver sabores, Como chegar).",
+      "html": "<a class=\"ds-btn-white\" href=\"#\">Ver sabores</a>",
+      "css": ".ds-btn-white{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:999px;border:2px solid #F1DDEB;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:1rem;text-decoration:none;color:#2A1740;background:#fff;box-shadow:0 8px 18px -12px rgba(42,23,64,.35);transition:transform .12s}.ds-btn-white:hover{transform:translateY(-1px)}.ds-btn-white:active{transform:none}.ds-btn-white:focus-visible{outline:3px solid #6B4DFF;outline-offset:3px}"
+    },
+    {
+      "name": "Barra de navegação",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Pílula flutuante em vidro com logo, links e botão iFood.",
+      "html": "<nav class=\"ds-nav\"><b class=\"ds-logo\">Gelatto Sole</b><span class=\"ds-links\"><a href=\"#\">Processo</a><a href=\"#\">Sabores</a><a href=\"#\">Sobre</a><a href=\"#\">Lojas</a></span><a class=\"ds-nav-cta\" href=\"#\">Pedir no iFood</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:64px;padding:0 12px 0 24px;border-radius:999px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);box-shadow:0 12px 30px -14px rgba(42,23,64,.35),inset 0 0 0 1px rgba(255,255,255,.9);color:#2A1740}.ds-logo{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:1.45rem;letter-spacing:-.03em}.ds-links{display:flex;gap:30px}.ds-links a{font-family:Manrope,system-ui,sans-serif;font-weight:700;font-size:.97rem;color:inherit;text-decoration:none}.ds-links a:hover{color:#6B4DFF}.ds-nav-cta{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;background:#EA1D2C;color:#fff;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:.95rem;text-decoration:none;box-shadow:0 10px 20px -12px rgba(234,29,44,.7)}"
+    },
+    {
+      "name": "Selo",
+      "kind": "chip",
+      "refersTo": "badge",
+      "description": "Pílula branca acima do H1 do hero.",
+      "html": "<span class=\"ds-badge\">Feito hoje, na loja</span>",
+      "css": ".ds-badge{display:inline-flex;align-items:center;background:#fff;color:#2A1740;border-radius:999px;padding:8px 18px;font-family:Manrope,system-ui,sans-serif;font-weight:700;font-size:.95rem;box-shadow:0 8px 20px -10px rgba(42,23,64,.4)}"
+    },
+    {
+      "name": "Contador de passo",
+      "kind": "chip",
+      "refersTo": "step-count",
+      "description": "Pílula baunilha com pulso, sobre o vídeo do processo.",
+      "html": "<span class=\"ds-count\">Passo 1 de 4</span>",
+      "css": ".ds-count{display:inline-block;background:#FFE27A;color:#2A1740;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:.9rem;padding:7px 16px;border-radius:999px;animation:ds-glow 2s infinite}@keyframes ds-glow{0%,100%{box-shadow:0 0 0 0 rgba(255,226,122,.65)}50%{box-shadow:0 0 0 10px rgba(255,226,122,0)}}"
+    },
+    {
+      "name": "Card de produto",
+      "kind": "card",
+      "refersTo": "product-tile",
+      "description": "Foto em tela cheia com legenda sobre degradê ameixa-noite.",
+      "html": "<article class=\"ds-pk\"><div class=\"ds-pk-img\"></div><div class=\"ds-pk-cap\"><h3>Casquinha Pistache</h3><p>Pistache cremoso com castanhas e farelo crocante por cima.</p><div class=\"ds-pk-meta\"><span>A partir de R$ 12,90</span><a href=\"#\">Pedir no iFood</a></div></div></article>",
+      "css": ".ds-pk{position:relative;width:320px;height:400px;border-radius:30px;overflow:hidden;background:#EBDDF0}.ds-pk-img{position:absolute;inset:0;background:linear-gradient(160deg,#CDE7B0,#7ED26B 60%,#4E8A3A);transition:transform .7s}.ds-pk:hover .ds-pk-img{transform:scale(1.05)}.ds-pk-cap{position:absolute;left:0;right:0;bottom:0;padding:80px 22px 20px;display:grid;gap:6px;color:#fff;background:linear-gradient(0deg,rgba(22,8,40,.92),rgba(22,8,40,.6) 55%,rgba(22,8,40,0))}.ds-pk-cap h3{margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-.015em;line-height:1.02}.ds-pk-cap p{margin:0;font-family:Manrope,system-ui,sans-serif;font-size:1rem;color:rgba(255,255,255,.88)}.ds-pk-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}.ds-pk-meta span{font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:.95rem;color:#FFE27A}.ds-pk-meta a{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;background:#EA1D2C;color:#fff;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:.95rem;text-decoration:none}"
+    },
+    {
+      "name": "Card Mais sabores",
+      "kind": "card",
+      "refersTo": "more-flavors-card",
+      "description": "Bloco maracujá que leva ao cardápio completo.",
+      "html": "<aside class=\"ds-more\"><h3>Mais de 40 sabores no cardápio</h3><p>Coco, chocolate belga, doce de leite e muito mais.</p></aside>",
+      "css": ".ds-more{border-radius:30px;background:#FFC93C;color:#2A1740;padding:36px 40px;display:grid;gap:14px;max-width:560px}.ds-more h3{margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:2.2rem;letter-spacing:-.025em;line-height:1.02}.ds-more p{margin:0;font-family:Manrope,system-ui,sans-serif;font-weight:500;font-size:1.05rem}"
+    },
+    {
+      "name": "Cabeçalho de seção",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Título + lead com régua-arco-íris de sabores.",
+      "html": "<div class=\"ds-sech\"><h2>Os queridinhos da casa</h2><p>Escolha o seu e peça direto no iFood.</p></div>",
+      "css": ".ds-sech{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:12px 48px;align-items:end;padding-bottom:30px;color:#2A1740}.ds-sech::after{content:\"\";position:absolute;left:0;right:0;bottom:0;height:4px;border-radius:4px;background:linear-gradient(90deg,#FF4D7E,#FFB81F,#38C8FF,#6B4DFF)}.ds-sech h2{margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:2.6rem;letter-spacing:-.025em;line-height:1.02}.ds-sech p{margin:0;font-family:Manrope,system-ui,sans-serif;font-size:1.15rem;color:#5C4A74}"
+    },
+    {
+      "name": "Etiqueta manga",
+      "kind": "chip",
+      "refersTo": "photo-tag",
+      "description": "Etiqueta inclinada colada sobre a borda da foto.",
+      "html": "<span class=\"ds-tag\">Feito hoje, na loja</span>",
+      "css": ".ds-tag{display:inline-block;background:#FFB81F;color:#2A1740;font-family:Manrope,system-ui,sans-serif;font-weight:800;font-size:1rem;padding:10px 20px;border-radius:10px;transform:rotate(-4deg);box-shadow:0 14px 24px -12px rgba(42,23,64,.5)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Vitrine de Verão",
+    "overview": "O site se comporta como uma vitrine de gelato numa tarde de sol: um fundo claro, rosado e luminoso, onde a cor vem dos sabores. A interface em volta é limpa e direta; quem chama atenção é a fotografia e o vídeo do sorvete de verdade. A tipografia display é pesada, compacta e calorosa, e fala alto nos títulos; o resto da página fica quieto para deixar o produto brilhar.\n\nA paleta é nomeada por sabores e usada em pequenas doses: morango, manga, céu de coco e blueberry aparecem juntos como uma linha-arco-íris (a régua sob os títulos, a onda no fim do hero), e isoladamente como acentos pontuais (aspas, numerais, selos). O vermelho iFood é exclusivo da ação de pedir. Superfícies grandes alternam entre o rosa-leite claro, faixas em ameixa escura e blocos de sabor (amarelo, gradiente morango-manga), sempre com cantos muito arredondados.\n\nO movimento é a assinatura de acabamento: vídeo do hero em moldura inclinada que reage ao mouse, faixa de sabores rolando em diagonal, e uma seção de processo em que o vídeo cresce até ocupar a tela enquanto o scroll avança, com textos que aparecem letra a letra.",
+    "keyCharacteristics": [
+      "Fundo claro rosa-leite com brilhos radiais suaves (rosa, céu, baunilha); nunca branco puro chapado.",
+      "Fotografia e vídeo reais do produto como protagonistas; UI discreta em volta.",
+      "Display Bricolage Grotesque 800, apertado (-0.025em), entrelinha 1.02.",
+      "Cantos generosos em todo lugar: pílulas (999px) para controles, 30–56px para superfícies.",
+      "Sombras difusas, deslocadas para baixo e tingidas de ameixa (nunca preto neutro).",
+      "Linha-arco-íris de sabores como único ornamento recorrente.",
+      "Vermelho iFood reservado para \"Pedir no iFood\"."
+    ],
+    "rules": [
+      {
+        "name": "The iFood Only Rule",
+        "body": "O vermelho iFood significa \"pedir\". Nunca usá-lo em decoração, títulos ou estados de outros controles.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rainbow Line Rule",
+        "body": "Os sabores aparecem juntos apenas como uma linha contínua morango → manga → céu → blueberry (régua de 4px sob cabeçalhos de seção, traço de 5px na onda do hero). Não espalhar os quatro como blocos de cor lado a lado.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plum Ink Rule",
+        "body": "Texto e sombras são tingidos de ameixa (#2A1740 / rgba(42,23,64,…)). Nada de preto ou cinza neutro.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Display Rule",
+        "body": "Títulos sempre em Bricolage 800 com tracking negativo e entrelinha ~1. Manrope nunca é usada para títulos.",
+        "section": "typography"
+      },
+      {
+        "name": "The Outline Numeral Rule",
+        "body": "Números e marcas decorativas gigantes são vazados (só contorno), nunca preenchidos, para serem presença sem peso.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tinted Shadow Rule",
+        "body": "Toda sombra é colorida com a cor do contexto e tem spread negativo (fica sob o objeto, não à volta). Sombras cinzentas ou em halo uniforme quebram a vitrine.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Light Overlays Rule",
+        "body": "Sobre fotografia, a legibilidade vem de um degradê ameixa-noite de baixo para cima (rgba(22,8,40,.92) → 0), não de caixas opacas.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** manter o fundo rosa-leite (#FFF7FB) com os três brilhos radiais; a página nunca é branca chapada.",
+      "**Do** deixar a fotografia e o vídeo reais do sorvete liderarem cada seção de produto; a UI em volta fica discreta.",
+      "**Do** usar Bricolage Grotesque 800 com tracking -0.025em e entrelinha ~1 em todos os títulos.",
+      "**Do** usar pílulas (999px) para todo controle e 30–56px para superfícies.",
+      "**Do** tingir sombras com ameixa ou com a cor do elemento, sempre com spread negativo.",
+      "**Do** reservar o vermelho iFood (#EA1D2C) para \"Pedir no iFood\".",
+      "**Do** usar a linha-arco-íris (morango → manga → céu → blueberry) como único ornamento recorrente.",
+      "**Do** manter o fallback estático e o respeito a `prefers-reduced-motion` em qualquer novo movimento."
+    ],
+    "donts": [
+      "**Don't** reintroduzir botões em relevo 3D (sombra sólida embaixo), esferas/bolas 3D desenhadas em CSS, casquinhas ilustradas ou cards de \"bento\" com ilustração: são camadas antigas que ainda estão no CSS mas foram substituídas e não fazem parte da identidade.",
+      "**Don't** usar preto (#000) ou cinza neutro em texto ou sombras.",
+      "**Don't** usar o vermelho iFood em decoração ou em controles que não sejam pedido.",
+      "**Don't** espalhar os sabores como blocos de cor lado a lado ou em ícones coloridos; eles aparecem como linha contínua ou como acento pontual.",
+      "**Don't** colocar caixas opacas sobre fotos e vídeos; legibilidade vem do degradê ameixa-noite.",
+      "**Don't** girar elementos além de ±5° (exceto a moldura 3D do hero).",
+      "**Don't** usar Manrope em títulos ou Bricolage em parágrafos corridos."
+    ]
+  }
+}

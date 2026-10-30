@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Gelatto Sole · Sorvetes artesanais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header><div class="wrap nav">
+  <a class="logo" href="#topo">Gelatto Sole</a>
+  <nav aria-label="Principal"><ul><li><a href="#processo">Processo</a></li><li><a href="#sabores">Sabores</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#unidades">Lojas</a></li></ul></nav>
+  <a class="btn btn-ifood btn-sm" href="https://www.ifood.com.br/" target="_blank" rel="noopener">Pedir no iFood</a>
+</div></header>
+
+<main id="topo">
+<section class="hero" id="heroScene">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">Feito hoje, na loja</span>
+      <h1>Sorvete artesanal com sabor de verão o ano todo.</h1>
+      <p class="lead">Gelatos e picolés feitos todo dia com frutas frescas. Escolha seu sabor e peça pelo iFood.</p>
+      <div class="cta-row">
+        <a class="btn btn-ifood" href="https://www.ifood.com.br/" target="_blank" rel="noopener">Pedir no iFood</a>
+        <a class="btn btn-white" href="#sabores">Ver sabores</a>
+      </div>
+    </div>
+    <div class="scene" id="tiltScene">
+      <div class="frame" id="tiltFrame"><video id="heroVid" muted loop playsinline autoplay aria-label="Espátula misturando gelato cremoso em uma cuba"></video></div>
+    </div>
+  </div>
+<svg class="edge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#FF4D7E"/><stop offset=".35" stop-color="#FFB81F"/><stop offset=".7" stop-color="#38C8FF"/><stop offset="1" stop-color="#6B4DFF"/></linearGradient></defs><path d="M0,70 C240,20 480,110 720,64 C960,18 1200,100 1440,52 L1440,110 L0,110Z" fill="#FF8FB1" opacity=".45"/><path d="M0,86 C260,40 500,112 760,78 C1010,46 1220,104 1440,70 L1440,110 L0,110Z" fill="#FFF7FB"/><path d="M0,86 C260,40 500,112 760,78 C1010,46 1220,104 1440,70" fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="track">
+  <span><i></i>Pistache<b style="--c:var(--pist)"></b>Morango<b style="--c:var(--straw)"></b>Manga<b style="--c:var(--mango)"></b>Blueberry<b style="--c:var(--blue)"></b>Coco<b style="--c:var(--sky)"></b>Chocolate<b style="--c:var(--straw)"></b></span>
+  <span><i></i>Pistache<b style="--c:var(--pist)"></b>Morango<b style="--c:var(--straw)"></b>Manga<b style="--c:var(--mango)"></b>Blueberry<b style="--c:var(--blue)"></b>Coco<b style="--c:var(--sky)"></b>Chocolate<b style="--c:var(--straw)"></b></span>
+</div></div>
+
+<section class="scrolly" id="processo" aria-label="Como fazemos nosso sorvete">
+  <div class="stage">
+    <div class="intro" id="intro">
+      <h2 id="ttl">Do ingrediente à casquinha.</h2>
+    </div>
+    <div class="vbox"><video id="scrubVid" muted playsinline preload="auto" aria-label="Preparo de uma casquinha de gelato"></video><div class="shade"></div></div>
+    <div class="stage-text">
+      <span class="count" id="count">Passo 1 de 4</span>
+      <ol class="rail" aria-hidden="true"><li class="on">Fruta</li><li>Preparo</li><li>Montagem</li><li>Entrega</li></ol>
+      <div class="steps" aria-live="polite">
+        <div class="step on"><h3>Escolhemos a fruta</h3><p>Pistache, morango e manga selecionados no ponto certo de doçura.</p></div>
+        <div class="step"><h3>Preparamos na hora</h3><p>Cada massa é batida em pequenos lotes, sem pressa e sem atalhos.</p></div>
+        <div class="step"><h3>Montamos com carinho</h3><p>Bolas generosas, calda caseira e frutas frescas por cima.</p></div>
+        <div class="step"><h3>Servimos para você</h3><p>Na loja ou na sua porta, sempre na temperatura perfeita.</p></div>
+      </div>
+      <div class="bar" aria-hidden="true"><i id="prog"></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="sabores"><div class="wrap">
+  <div class="sec-h"><h2>Os queridinhos da casa</h2><p class="lead">Escolha o seu e peça direto no iFood. Chega gelado, do jeito que saiu da vitrine.</p></div>
+  <div class="grid-pk" id="grid-pk"></div>
+</div></section>
+
+<section id="sobre"><div class="wrap about2">
+  <figure class="ph"><img data-img="vitrine" alt="Vitrine com os sabores artesanais da Gelatto Sole"><figcaption>Feito hoje, na loja</figcaption></figure>
+  <div>
+    <h2>Sorveteria de bairro, padrão de grande marca.</h2>
+    <p class="lead" style="margin:22px 0 10px">A Gelatto Sole nasceu para servir sorvete como ele deve ser: fresco, cremoso e feito com ingredientes que você reconhece. Cada receita é testada até ficar no ponto.</p>
+    <dl class="vals">
+      <div><dt>Natural</dt><dd>Frutas, leite e castanhas de fornecedores que conhecemos.</dd></div>
+      <div><dt>Fresco</dt><dd>Sem estoque antigo: o que você come foi feito há pouco.</dd></div>
+      <div><dt>Caloroso</dt><dd>Do balcão ao iFood, você é recebido como vizinho.</dd></div>
+    </dl>
+  </div>
+</div></section>
+
+<section class="flow"><div class="wrap">
+  <div class="sec-h"><h2>Como pedir</h2><p class="lead">Em três passos o sorvete chega até você.</p></div>
+  <ol class="f3">
+    <li><b>1</b><h3>Escolha seus sabores</h3><p>Veja o cardápio aqui ou direto no app.</p></li>
+    <li><b>2</b><h3>Peça no iFood</h3><p>Toque em “Pedir no iFood” e finalize o pedido.</p></li>
+    <li><b>3</b><h3>Receba gelado</h3><p>Embalagem térmica para chegar no ponto.</p></li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-h"><h2>Quem provou, voltou</h2><p class="lead">O que os clientes dizem da loja e dos pedidos pelo iFood.</p></div>
+  <div class="qs">
+    <figure class="q1"><blockquote>O pistache é o melhor que já comi. Cremoso e com gosto de pistache de verdade.</blockquote><figcaption><b>Marina S.</b> cliente da loja <span>★ 5,0</span></figcaption></figure>
+    <div class="qside">
+      <figure><blockquote>Pedi pelo iFood e chegou geladinho. As crianças pedem toda semana.</blockquote><figcaption><b>Rafael T.</b> pedido pelo iFood <span>★ 5,0</span></figcaption></figure>
+      <figure><blockquote>A manga tem gosto de fruta madura. Atendimento nota dez.</blockquote><figcaption><b>Camila R.</b> cliente da loja <span>★ 5,0</span></figcaption></figure>
+    </div>
+  </div>
+</div></section>
+
+<section id="unidades" class="stores-sec"><div class="wrap">
+  <div class="sec-h"><h2>Venha nos visitar</h2><p class="lead">Duas lojas para tomar sorvete sem pressa.</p></div>
+  <ul class="stores">
+    <li><h3>Loja Centro</h3><p>Rua das Palmeiras, 120 · Centro<br>Todos os dias, das 11h às 22h</p><a class="btn btn-white btn-sm" href="#unidades">Como chegar</a></li>
+    <li><h3>Loja Jardins</h3><p>Av. do Sol, 845 · Jardins<br>Todos os dias, das 12h às 23h</p><a class="btn btn-white btn-sm" href="#unidades">Como chegar</a></li>
+  </ul>
+</div></section>
+
+<section class="cta2"><div class="cta-box">
+  <div class="cta-txt"><h2>Bateu vontade de sorvete?</h2><p>Escolha seus sabores e peça agora. A Gelatto Sole vai até você.</p><a class="btn btn-white" href="https://www.ifood.com.br/" target="_blank" rel="noopener" style="color:var(--ifood)">Pedir no iFood</a></div>
+  <div class="prints" aria-hidden="true"><img data-img="trio" class="p1" alt=""><img data-img="manga" class="p2" alt=""></div>
+</div></section>
+</main>
+
+<footer class="foot2"><div class="wrap">
+  <div class="fcols">
+    <div><b class="flogo">Gelatto Sole</b><p>Sorvetes artesanais, feitos todos os dias.</p></div>
+    <ul><li><a href="#processo">Processo</a></li><li><a href="#sabores">Sabores</a></li><li><a href="#sobre">Sobre</a></li></ul>
+    <ul><li><a href="#unidades">Lojas</a></li><li><a href="https://www.ifood.com.br/" target="_blank" rel="noopener">Pedir no iFood</a></li><li><a href="#topo">Instagram @gelattosole</a></li></ul>
+  </div>
+  <div class="mark" aria-hidden="true">Gelatto Sole</div>
+  <p class="small">© 2026 Gelatto Sole. Todos os direitos reservados.</p>
+</div></footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
