@@ -96,12 +96,23 @@
        só começa a baixar depois do evento load, para não disputar banda com a grade de sabores e as fotos. */
   hero.addEventListener("error",function(){if(hero.getAttribute("src")===BH)hero.src=url});
   hero.src=BH;
-  function loadProcess(){v.src=url}
+  v.muted=true;v.playsInline=true;v.setAttribute("playsinline","");v.setAttribute("webkit-playsinline","");
+  function setDirectSrc(){if(!v.getAttribute("src")){v.src=url;try{v.load()}catch(e){}}}
+  function loadProcess(){
+    if(window.fetch&&location.protocol!=="file:"){
+      fetch(url).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){
+        v.src=URL.createObjectURL(b);
+        try{v.load()}catch(e){}
+      }).catch(setDirectSrc);
+    }else{
+      setDirectSrc();
+    }
+  }
   if(document.readyState==="complete")loadProcess();else window.addEventListener("load",loadProcess);
   if(reduce){hero.removeAttribute("autoplay");hero.pause();fallback();v.addEventListener("loadedmetadata",function(){v.currentTime=v.duration-0.2});return}
   hero.play&&hero.play().catch(function(){});
   v.addEventListener("error",fallback);
-  var cur=0,target=0,dur=0;
+  var cur=0,target=0,dur=0,primed=false,unlocked=false,seeking=false,seekTimer=0;
   var rail=[].slice.call(sec.querySelectorAll(".rail li")),ttl=document.getElementById("ttl");
   function split(el,mode,cls){var txt=el.textContent,sr=document.createElement("span"),g=document.createElement("span"),i=0;sr.className="sr";sr.textContent=txt;g.setAttribute("aria-hidden","true");el.textContent="";txt.split(" ").forEach(function(w){var s=document.createElement("span");s.className="wd";if(mode==="c"){w.split("").forEach(function(c){var q=document.createElement("span");q.className=cls;q.style.setProperty("--i",i++);q.textContent=c;s.appendChild(q)})}else{s.className="wd "+cls;s.style.setProperty("--i",i++);s.textContent=w}g.appendChild(s);g.appendChild(document.createTextNode(" "))});el.appendChild(sr);el.appendChild(g)}
   steps.forEach(function(s){split(s.querySelector("h3"),"c","ch");split(s.querySelector("p"),"w","ch")});
@@ -122,22 +133,61 @@
     tcs.forEach(function(c,k){c.classList.toggle("in",q>=0.1+0.8*k/tcs.length);c.style.transitionDelay=(k*18)+"ms"});
     prog.style.width=(p2*100)+"%";
   }
-var coarse=window.matchMedia("(pointer:coarse)").matches;
+  function primeFrame(){
+    try{v.pause()}catch(e){}
+    if(dur>0){
+      try{v.currentTime=Math.min(dur-0.05,Math.max(0.001,cur*dur))}catch(e){}
+    }
+    calc();
+  }
+  function unlockVideo(){
+    if( v.duration&&isFinite(v.duration))dur=v.duration;
+    if(!dur||primed)return;
+    primed=true;
+    var p=v.play&&v.play();
+    if(p&&p.then){
+      p.then(function(){
+        unlocked=true;
+        primeFrame();
+      }).catch(function(){
+        primeFrame();
+      });
+    }else{
+      unlocked=true;
+      primeFrame();
+    }
+  }
+  window.addEventListener("touchstart",function(){
+    if(dur>0&&!unlocked){
+      var p=v.play&&v.play();
+      if(p&&p.then)p.then(function(){unlocked=true;primeFrame()}).catch(function(){});
+    }
+  },{passive:true,once:true});
+  v.addEventListener("loadedmetadata",unlockVideo);
+  v.addEventListener("loadeddata",unlockVideo);
+  v.addEventListener("canplay",unlockVideo);
+  v.addEventListener("seeked",function(){seeking=false;clearTimeout(seekTimer)});
+  var coarse=window.matchMedia("(pointer:coarse)").matches;
   var lastSeek=0;
-  var seekDelay=coarse?70:16;
-  var seekThreshold=coarse?0.06:0.02;
+  var seekDelay=coarse?40:16;
+  var seekThreshold=coarse?0.03:0.015;
   function tick(now){
+    var t=now||performance.now();
     cur+=(target-cur)*0.12;
-    var next=Math.min(dur-0.05,Math.max(0,cur*dur));
-    if(dur>0&&!v.seeking&&now-lastSeek>=seekDelay&&Math.abs(v.currentTime-next)>seekThreshold){
+    var next=Math.min(dur-0.05,Math.max(0.001,cur*dur));
+    if(dur>0&&primed&&!seeking&&!v.seeking&&(t-lastSeek>=seekDelay)&&Math.abs(v.currentTime-next)>seekThreshold){
       try{
+        seeking=true;
         v.currentTime=next;
-        lastSeek=now;
-      }catch(e){}
+        lastSeek=t;
+        clearTimeout(seekTimer);
+        seekTimer=setTimeout(function(){seeking=false},120);
+      }catch(e){
+        seeking=false;
+      }
     }
     requestAnimationFrame(tick);
   }
-  v.addEventListener("loadedmetadata",function(){dur=v.duration;v.pause();calc()});
   window.addEventListener("scroll",calc,{passive:true});window.addEventListener("resize",calc);
   calc();requestAnimationFrame(tick);
 })();

@@ -77,7 +77,7 @@ nav a{text-decoration:none;font-weight:700;font-size:.97rem;transition:color .15
 .intro{position:absolute;top:clamp(20px,6vh,56px);left:0;right:0;text-align:center;padding:0 20px;z-index:2}
 .intro h2{font-size:clamp(2rem,4.6vw,3.6rem);margin:0 0 14px;color:var(--ink)}
 .vbox{position:absolute;inset:calc(26% * (1 - var(--e))) calc(20% * (1 - var(--e))) calc(6% * (1 - var(--e)));border-radius:calc(40px * (1 - var(--e)));border:0;overflow:hidden;background:transparent;box-shadow:0 30px 60px -30px rgba(42,23,64,.45)}
-.vbox video{width:100%;height:100%;object-fit:cover;display:block}
+.vbox video{width:100%;height:100%;object-fit:cover;display:block;-webkit-transform:translateZ(0);transform:translateZ(0)}
 .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,5,30,.8),rgba(10,5,30,.35) 45%,transparent 75%),linear-gradient(0deg,rgba(10,5,30,.55),transparent 40%);opacity:var(--e);pointer-events:none}
 .stage-text{position:absolute;left:clamp(16px,4vw,56px);bottom:clamp(16px,7vh,64px);width:min(470px,calc(100% - 32px));background:none;border:0;border-radius:0;padding:0;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.55);opacity:0;z-index:3}
 .rail{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 22px;padding:0}
