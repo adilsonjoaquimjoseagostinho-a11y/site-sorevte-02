@@ -122,7 +122,21 @@
     tcs.forEach(function(c,k){c.classList.toggle("in",q>=0.1+0.8*k/tcs.length);c.style.transitionDelay=(k*18)+"ms"});
     prog.style.width=(p2*100)+"%";
   }
-  function tick(){cur+=(target-cur)*0.12;if(dur&&Math.abs(v.currentTime-cur*dur)>0.02){try{v.currentTime=Math.min(dur-0.05,cur*dur)}catch(e){}}requestAnimationFrame(tick)}
+var coarse=window.matchMedia("(pointer:coarse)").matches;
+  var lastSeek=0;
+  var seekDelay=coarse?70:16;
+  var seekThreshold=coarse?0.06:0.02;
+  function tick(now){
+    cur+=(target-cur)*0.12;
+    var next=Math.min(dur-0.05,Math.max(0,cur*dur));
+    if(dur>0&&!v.seeking&&now-lastSeek>=seekDelay&&Math.abs(v.currentTime-next)>seekThreshold){
+      try{
+        v.currentTime=next;
+        lastSeek=now;
+      }catch(e){}
+    }
+    requestAnimationFrame(tick);
+  }
   v.addEventListener("loadedmetadata",function(){dur=v.duration;v.pause();calc()});
   window.addEventListener("scroll",calc,{passive:true});window.addEventListener("resize",calc);
   calc();requestAnimationFrame(tick);
