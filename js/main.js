@@ -18,6 +18,44 @@
 
   var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var canHover=window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if(!reduce&&"IntersectionObserver" in window){
+    var rvs=[];
+    var sh=document.querySelector("#sabores .sec-h"),pm=document.querySelector("#sabores .pk-more"),as=document.querySelector("#sobre .about-stage"),al=document.querySelector("#sobre .about-body .lead");
+    if(sh){sh.classList.add("rv");rvs.push(sh)}
+    [].slice.call(document.querySelectorAll("#sabores .pk")).forEach(function(el,k){
+      el.classList.add("rv","rv-mask");
+      el.style.setProperty("--rv-d",((k<2?k:k-2)*90)+"ms");
+      rvs.push(el);
+    });
+    if(pm){pm.classList.add("rv");rvs.push(pm)}
+    if(as){as.classList.add("rv","rv-mask");rvs.push(as)}
+    if(al){al.classList.add("rv");rvs.push(al)}
+    [].slice.call(document.querySelectorAll("#sobre .vals div")).forEach(function(el,k){
+      el.classList.add("rv");
+      el.style.setProperty("--rv-d",(k*90)+"ms");
+      rvs.push(el);
+    });
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add("in");
+          setTimeout(function(){e.target.style.removeProperty("--rv-d")},900);
+          io.unobserve(e.target);
+          if(e.target===al){
+            [].slice.call(document.querySelectorAll("#sobre .vals div")).forEach(function(v){
+              v.classList.add("in");
+              setTimeout(function(){v.style.removeProperty("--rv-d")},950);
+              io.unobserve(v);
+            });
+          }
+        }
+      });
+    },{threshold:.08,rootMargin:"0px 0px -2% 0px"});
+    rvs.forEach(function(el){
+      if(el.getBoundingClientRect().top<window.innerHeight*.92){el.classList.add("in");el.style.removeProperty("--rv-d")}
+      else io.observe(el);
+    });
+  }
   if(!reduce&&canHover){
     var hs=document.getElementById("heroScene"),fr=document.getElementById("tiltFrame");
     hs.addEventListener("mousemove",function(e){
